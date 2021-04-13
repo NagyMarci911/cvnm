@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nagy Márton CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+body {
+  display: grid;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  margin-top: 32px;
+  max-width: 700px;
+  width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+}
+.img-container {
+  width: 100%;
+  height: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+
+}
+header {
+  background-color: #e9c5ad;
+  z-index:2;
+}
+
+.header-content {
+  padding: 16px;
+}
+
+.header-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.header-item i {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+}
+
+.edu-item {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.edu-item i {
+  width: 24px;
+  font-size: 24px;
+  margin: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  border: 1px solid black;
+  padding: 24px 16px;
+  background-color: rgb(222,226,200);
+}
+
+section.extra {
+  display: flex;
+  font-size: 32px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 8px 0;
+  margin-bottom: 16px;
+  padding: 0 24px;
+}
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #e9c5ad;
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hvr-grow-shadow">
+        <div class="img-container">
+         <img src="cvpic.jpg" />
+        </div>
+        <div class="header-content">
+          <h1>Nagy Márton</h1>
+          <div class="header-item">
+            <i class="fas fa-baby"></i>
+            <span>1996.11.06</span>
+          </div>
+          <div class="header-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:#">nagymarci91142@gmail.com</a>
+          </div>
+          <div class="header-item">
+            <i class="fas fa-phone"></i>
+            0630 2148681
+          </div>
+          <div class="header-item">
+            <i class="fas fa-store-alt"></i>
+            Budapest
+          </div>
+        </div>
+      </header>
+      <section  class="hvr-grow-shadow" style="z-index:2">
+        <h2>Számítástechnikai ismeretek</h2>
+        <ul>
+          <li>C#</li>
+          <li>LINQ</li>
+          <li>MYSQL</li>
+          <li>git</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>javascript, Azure, MVC alapok</li>
+        </ul>
+        <h3>Projectek</h3>
+        <ul>
+          <li>
+              <p>ASP.NET oldal film értékelés feltöltésére és mások ajánlásainak megtekintésére.</p>
+              <form style="text-align:center" action="https://github.com/NagyMarci911/MovieReviewProject">
+                 <input class="hvr-fade" type="submit" value="GitHub link" />
+              </form>
+          </li>
+          <li>
+              <p>Láncolt lista különböző metódusokkal és unit tesztekkel</p>
+              <form style="text-align:center" action="https://github.com/NagyMarci911/PokemonLinkedList">
+                 <input class="hvr-fade" type="submit" value="GitHub link" />
+              </form>
+          </li>
+          
+        </ul>
+      </section>
+      <section class="hvr-grow-shadow">
+        <h2>Tanulmányok</h2>
+        <div class="edu-item">
+          <i class="fas fa-graduation-cap"></i>
+          <span style="font-size:smaller">2015-2019 Eötvös Loránd Tudományegyetem - Kémia BSc.</span>
+            <br />
+        </div>
+        <div class="edu-item">
+          <i class="fas fa-spinner fa-pulse"></i>
+          <span style="font-size:smaller">2020- Óbudai Egyetem - Mérnökinformatika BSc.</span>
+        </div>
+      </section>
+      <section class="hvr-grow-shadow">
+        <h2>Szakmai tapasztalat</h2>
+        <ul>
+          <li>2018-2019 Eötvös Loránd Tudományegyetem -Szakmai gyakorlat (HPLC, Peptidszintézis)<br /><br /></li>
+          <li>2019-2020 Ceva Phylaxia Zrt. - vegyésztechnikus (vírusvakcina osztály)</li>
+        </ul>
+        
+      </section>
+      <section class="hvr-grow-shadow">
+        <h2>Egyéb</h2>
+        <ul>
+          <li>Angol – IELTS Academic 6.5 </li>
+          <li>
+              <div style="margin-top:7px; margin-bottom:7px">HackerRank profil: </div>
+              <form  action="https://www.hackerrank.com/nagymarci91142">
+                 <input class="hvr-fade" type="submit" value="Hackerrank link" />
+              </form>
+               
+          </li>
+        </ul>
+      </section>
+      <section class="extra hvr-grow-shadow">
+        <i class="fas fa-dog "></i>
+        <i class="fas fa-bicycle "></i>
+        <i class="fas fa-utensils"></i>
+      </section>
+    </div>
+  </body>
+</html>
+

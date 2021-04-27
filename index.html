@@ -31,6 +31,13 @@ img {
   height: auto;
 
 }
+
+button { 
+  background:none;
+  border:none;
+  font-size: 95%;
+}
+
 header {
   background-color: #e9c5ad;
   z-index:2;
@@ -56,6 +63,7 @@ header {
 .edu-item {
   font-size: 20px;
   margin-bottom: 12px;
+  margin-top:15px;
 }
 
 .edu-item i {
@@ -78,6 +86,9 @@ section.extra {
   font-size: 32px;
   justify-content: space-around;
   align-items: center;
+}
+.hide{
+  display: none;
 }
 
 h1, h2, h3 {
@@ -107,6 +118,7 @@ ul {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .hvr-fade {
   display: inline-block;
   vertical-align: middle;
@@ -123,7 +135,15 @@ ul {
   background-color: #e9c5ad;
   color: white;
 }
-
+.dogs{
+  background-image: url(dogs.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+abbr{
+  border: none;
+  text-decoration: none;
+}
     </style>
   </head>
   <body>
@@ -144,7 +164,7 @@ ul {
           </div>
           <div class="header-item">
             <i class="fas fa-phone"></i>
-            0630 2148681
+            06 30 214 8681
           </div>
           <div class="header-item">
             <i class="fas fa-store-alt"></i>
@@ -157,46 +177,48 @@ ul {
         <ul>
           <li>C#</li>
           <li>LINQ</li>
-          <li>MYSQL</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
           <li>git</li>
           <li>CSS</li>
           <li>Bootstrap</li>
-          <li>javascript, Azure, MVC alapok</li>
+          <li>Azure, MVC alapok</li>
         </ul>
         <h3>Projectek</h3>
         <ul>
-          <li>
-              <p>ASP.NET oldal film értékelés feltöltésére és mások ajánlásainak megtekintésére.</p>
+          <li class="mapLi">
+              <p><button class="mapDropDown hvr-fade">Térkép generátor <abbr title="Asztali szerepjáték">RPG</abbr> játékokhoz <i class="fas fa-caret-down"></i></button></p>
+              <form style="text-align:center" action="https://nagymarci911.github.io/FantasyGame/">
+                 <input class="hvr-fade" type="submit" value="link az oldalra" />
+              </form>
+          </li>
+          <li class="reviewLi">
+              <p><button class="ReviewDropDown hvr-fade">Weboldal filmértékeléseknek <i class="fas fa-caret-down"></i></button></p>
               <form style="text-align:center" action="https://github.com/NagyMarci911/MovieReviewProject">
                  <input class="hvr-fade" type="submit" value="GitHub link" />
               </form>
-          </li>
-          <li>
-              <p>Láncolt lista különböző metódusokkal és unit tesztekkel</p>
-              <form style="text-align:center" action="https://github.com/NagyMarci911/PokemonLinkedList">
-                 <input class="hvr-fade" type="submit" value="GitHub link" />
-              </form>
-          </li>
-          
+          </li>          
         </ul>
       </section>
       <section class="hvr-grow-shadow">
         <h2>Tanulmányok</h2>
         <div class="edu-item">
           <i class="fas fa-graduation-cap"></i>
-          <span style="font-size:smaller">2015-2019 Eötvös Loránd Tudományegyetem - Kémia BSc.</span>
+          <span style="font-size:smaller">2015 - 2019 Eötvös Loránd Tudományegyetem - Kémia BSc.</span>
+	  <div style="font-size:smaller;padding-left:10px">-Szerves kémia szakirány</div>
             <br />
         </div>
         <div class="edu-item">
           <i class="fas fa-spinner fa-pulse"></i>
-          <span style="font-size:smaller">2020- Óbudai Egyetem - Mérnökinformatika BSc.</span>
+          <span style="font-size:smaller">2020 - Óbudai Egyetem - Mérnökinformatika BSc.</span>
         </div>
       </section>
       <section class="hvr-grow-shadow">
         <h2>Szakmai tapasztalat</h2>
         <ul>
-          <li>2018-2019 Eötvös Loránd Tudományegyetem -Szakmai gyakorlat (HPLC, Peptidszintézis)<br /><br /></li>
-          <li>2019-2020 Ceva Phylaxia Zrt. - vegyésztechnikus (vírusvakcina osztály)</li>
+          <li class="ELTELi"><button class="ELTEDropDown hvr-fade" style="text-align: left;">2018-2019 Eötvös Loránd Tudományegyetem - Szakmai gyakorlat  <i class="fas fa-caret-down"></i></button></li>
+          <br>	          
+          <li class="cevaLi"><button class="cevaDropDown hvr-fade" style="text-align: left;" >2019-2020 Ceva Phylaxia Zrt. - vegyésztechnikus (vírusvakcina osztály)  <i class="fas fa-caret-down"></i></button></li>
         </ul>
         
       </section>
@@ -219,6 +241,10 @@ ul {
         <i class="fas fa-utensils"></i>
       </section>
     </div>
+  <img class="hide bigMap" style="position:fixed; z-index:4; width: 108vh; height: 90vh; left:0%"src="mapGenerator.png">
+  <img class="hide bigr1" style="position:fixed; z-index:4; width: 108vh; height: 60vh; left:0%"src="reviewProject2.png">
+  <img class="hide bigr2" style="position:fixed; z-index:4; width: 108vh; height: 50vh; left:0%"src="reviewProject.png">
+  <script src="scripts.js"></script>
   </body>
 </html>
 
